@@ -1,7 +1,6 @@
 {
   "name": "gameserver",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "node server.js",
@@ -12,5 +11,7 @@
   "dependencies": {
     "express": "^5.1.0",
     "nedb-promises": "^6.2.3"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
