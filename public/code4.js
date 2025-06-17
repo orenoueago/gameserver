@@ -6,6 +6,10 @@ gdjs.RankCode.GDNewTextObjects1= [];
 gdjs.RankCode.GDNewTextObjects2= [];
 gdjs.RankCode.GDBackObjects1= [];
 gdjs.RankCode.GDBackObjects2= [];
+gdjs.RankCode.GDNewText2Objects1= [];
+gdjs.RankCode.GDNewText2Objects2= [];
+gdjs.RankCode.GDNewText3Objects1= [];
+gdjs.RankCode.GDNewText3Objects2= [];
 
 
 gdjs.RankCode.eventsList0 = function(runtimeScene) {
@@ -16,8 +20,16 @@ gdjs.RankCode.eventsList0 = function(runtimeScene) {
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.RankCode.GDNewTextObjects1);
+gdjs.copyArray(runtimeScene.getObjects("NewText2"), gdjs.RankCode.GDNewText2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("NewText3"), gdjs.RankCode.GDNewText3Objects1);
 {for(var i = 0, len = gdjs.RankCode.GDNewTextObjects1.length ;i < len;++i) {
     gdjs.RankCode.GDNewTextObjects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(0).getChild("score").getAsString());
+}
+}{for(var i = 0, len = gdjs.RankCode.GDNewText2Objects1.length ;i < len;++i) {
+    gdjs.RankCode.GDNewText2Objects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(1).getChild("score").getAsString());
+}
+}{for(var i = 0, len = gdjs.RankCode.GDNewText3Objects1.length ;i < len;++i) {
+    gdjs.RankCode.GDNewText3Objects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(2).getChild("score").getAsString());
 }
 }}
 
@@ -56,6 +68,10 @@ gdjs.RankCode.GDNewTextObjects1.length = 0;
 gdjs.RankCode.GDNewTextObjects2.length = 0;
 gdjs.RankCode.GDBackObjects1.length = 0;
 gdjs.RankCode.GDBackObjects2.length = 0;
+gdjs.RankCode.GDNewText2Objects1.length = 0;
+gdjs.RankCode.GDNewText2Objects2.length = 0;
+gdjs.RankCode.GDNewText3Objects1.length = 0;
+gdjs.RankCode.GDNewText3Objects2.length = 0;
 
 gdjs.RankCode.eventsList0(runtimeScene);
 gdjs.RankCode.GD_9525490_9534892_9527036Objects1.length = 0;
@@ -64,6 +80,10 @@ gdjs.RankCode.GDNewTextObjects1.length = 0;
 gdjs.RankCode.GDNewTextObjects2.length = 0;
 gdjs.RankCode.GDBackObjects1.length = 0;
 gdjs.RankCode.GDBackObjects2.length = 0;
+gdjs.RankCode.GDNewText2Objects1.length = 0;
+gdjs.RankCode.GDNewText2Objects2.length = 0;
+gdjs.RankCode.GDNewText3Objects1.length = 0;
+gdjs.RankCode.GDNewText3Objects2.length = 0;
 
 
 return;
