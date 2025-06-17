@@ -252,7 +252,7 @@ if (isConditionTrue_0) {
     gdjs.Game_32SceneCode.GDPlatformer_9595CharacterObjects1[i].returnVariable(gdjs.Game_32SceneCode.GDPlatformer_9595CharacterObjects1[i].getVariables().getFromIndex(0)).setBoolean(false);
 }
 }{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "GameTime");
-}{runtimeScene.getGame().getVariables().getFromIndex(0).getChild("score").setNumber(gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSeconds(runtimeScene, "GameTime"));
+}{runtimeScene.getGame().getVariables().getFromIndex(0).getChild("score").setNumber(Math.floor(gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSeconds(runtimeScene, "GameTime")));
 }
 { //Subevents
 gdjs.Game_32SceneCode.eventsList1(runtimeScene);} //End of subevents
